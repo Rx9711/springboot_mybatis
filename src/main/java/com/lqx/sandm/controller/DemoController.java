@@ -18,6 +18,10 @@ public class DemoController {
     @Autowired
     private HttpServletRequest request;
 
+    /**
+     * Controller层
+     * @return
+     */
     @RequestMapping("/findAll")
     public String findAll(){
         List<User> userList = demoService.findAll();
