@@ -1,6 +1,11 @@
 package com.lqx.sandm.pojo;
 
-public class User {
+import lombok.ToString;
+
+import java.io.Serializable;
+
+@ToString
+public class User implements Serializable {
 
     private Integer user_id;
     private String user_code;
@@ -48,14 +53,4 @@ public class User {
         this.user_state = user_state;
     }
 
-    @Override
-    public String toString() {
-        return "User{" +
-                "user_id=" + user_id +
-                ", user_code='" + user_code + '\'' +
-                ", user_name='" + user_name + '\'' +
-                ", user_password='" + user_password + '\'' +
-                ", user_state='" + user_state + '\'' +
-                '}';
-    }
 }
