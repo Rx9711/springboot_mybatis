@@ -16,3 +16,6 @@ spring:
   thymeleaf:
     cache: false
     enabled: false
+#  redis:
+#    host: 192.168.135.129
+#    timeout: 1000
